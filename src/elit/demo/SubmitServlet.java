@@ -293,6 +293,7 @@ public class SubmitServlet extends HttpServlet {
 				System.out.println("submission response:" + response_api);
 
 				JSONObject json_obj = new JSONObject(response_api);
+				debug_output = json_obj.toString(4);
 				
 				String status_type = json_obj.getString("type");
 
