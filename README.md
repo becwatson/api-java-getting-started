@@ -15,10 +15,6 @@ https://devcenter.heroku.com/articles/java-webapp-runner
 
 $ mvn package
 
-$ export WI_ACCOUNT_ID="<account_id>"
-
-$ export WI_ACCOUNT_TOKEN="<account_token>"
-
 $ java -jar target/dependency/webapp-runner.jar target/*.war
 
 # Deploy to Heroku
@@ -43,6 +39,14 @@ $ heroku open
 # API access
 
 Apply for API key via wiapi@elit and set environment variables.
+
+
+For the locally running test app:
+
+$ export WI_ACCOUNT_ID="<account_id>"
+
+$ export WI_ACCOUNT_TOKEN="<account_token>"
+
 
 For heroku this can be done as follows:
 
