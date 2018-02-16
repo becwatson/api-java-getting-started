@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+
+	<!-- ========================================================== -->
+	<!-- General Info -->
+	<!-- ========================================================== -->
+
+	<display-name>API Java Getting Started Demo</display-name>
+	<description>
+		Simple java example to illustrate use of the ELiT's Write and Improve API.
+	</description>
+
+
+	<!-- ========================================================== -->
+	<!-- API Servlet -->
+	<!-- ========================================================== -->
+	
+	<!-- Page to display once input text has been submitted -->
+	<servlet>
+		<servlet-name>submitServlet</servlet-name>
+		<servlet-class>elit.demo.SubmitServlet</servlet-class>
+	</servlet>
+	
+	<!-- Index page -->
+	<servlet>
+		<servlet-name>indexServlet</servlet-name>
+		<servlet-class>elit.demo.IndexServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>indexServlet</servlet-name>
+		<url-pattern>/api</url-pattern>
+	</servlet-mapping>
+	
+	<!-- ========================================================== -->
+	<!-- Welcome Files -->
+	<!-- ========================================================== -->
+
+	<!-- The main page for the site will be rendered by the servlet indexServlet -->
+	<welcome-file-list>
+	    <welcome-file>api</welcome-file>
+	</welcome-file-list>
+    
+</web-app>
