@@ -1,5 +1,7 @@
 # api-java-getting-started
 
+Java exampe for Elit's API:
+
 # Clone and Run Locally 
 
 Install the Heroku CLI
